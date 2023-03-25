@@ -1,6 +1,12 @@
 {
   "dependencies": {
     "babel-polyfill": "6.26.0",
-    "jira-client": "6.4.1"
-  }
+    "jira-client": "6.4.1",
+    "@snyk/protect": "latest"
+  },
+  "scripts": {
+    "prepublish": "npm run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }
